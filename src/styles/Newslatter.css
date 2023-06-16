@@ -1,0 +1,30 @@
+.blog_right_sidebar .newsletter_widget .form-control {
+    height: 50px;
+    border-color: #f0e9ff;
+    font-size: 13px;
+    color: #999999;
+    padding-left: 20px;
+    border-radius: 0;
+}
+.blog_right_sidebar .single_sidebar_widget .btn_1 {
+    margin-top: 0px;
+}
+.boxed-btn {
+    background: #fff;
+    color: #ED078B !important;
+    display: inline-block;
+    padding: 18px 44px;
+    font-family: "Fredoka One",cursive;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #ED078B;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #ED078B;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.form-group {
+    margin-bottom: 1rem;
+}

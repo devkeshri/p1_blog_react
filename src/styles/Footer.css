@@ -1,0 +1,139 @@
+.footer_bg {
+    background: #4255A4;
+    padding: 20px 0 20px 0;
+}
+
+.footer_bg p {
+    color: #fff;
+    padding: 0 200px 0 0px;
+}
+
+.footer_bg h4.text-white.mb-4 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 29px;
+    font-weight: 600;
+}
+
+.footer_bg svg {
+    font-size: 35px;
+    border-radius: 50%;
+    padding: 8px;
+    background: rgba(128,136,255,0.1);
+    color: #fff;
+    margin: 0 10px;
+}
+
+.copy_txt {
+    color: #12D9DF;
+    padding-left: 10px;
+}
+.copy_txt:hover {
+    color: #12D9DF;
+    padding-left: 10px;
+}
+
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #fff;
+    text-transform: capitalize;
+    transition: .3s;
+    text-decoration: none;
+    font-family: "DM Sans",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.footer .btn{
+    position: relative;
+    content: "\f105";
+    /** font-family: "Font Awesome 5 Free"; **/
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+} 
+
+button { 
+    background-color: greenyellow;
+    
+}
+
+
+.copyright {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* .copyright a:hover {
+    color: #FFFFFF !important;
+    text-decoration: none;
+} */
+
+.add{
+    margin: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px)  {
+    .arrow{
+        display: none;
+
+    }
+    .foot_col {
+        padding: 0 0px 40px 15px;
+    }
+    .foot_coll {
+        padding: 0 0px 0px 15px;
+    }
+    .copyright {
+        padding: 10px 0 50px 0;
+    }
+
+    .container.footer.mt-5.py-5 {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 767px){
+    .arrow{
+        display: none;
+
+    }
+
+    .footer_bg p {
+        color: #fff;
+        padding: 0 50px 0 0px;
+    }
+    .foot_col {
+        padding: 0 0px 40px 15px;
+    }
+    .foot_coll {
+        padding: 0 0px 0px 15px;
+    }
+    .copyright {
+        padding: 10px 30px;
+    }
+
+    .container.footer.mt-5.py-5 {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 375px){
+    .arrow{
+        display: none;
+
+    }
+}

@@ -1,0 +1,17 @@
+.cd-timer {
+    display: inline-block;
+    text-align: center;
+    margin-left: 15px;
+    width: 70px;
+    padding-top: 10px;
+    position: relative;
+    background: rgba(251,206,15,0.1);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    line-height: 1;
+    margin: 0 10px;
+}
+
+.countdown {
+    padding: 30px 0;
+}

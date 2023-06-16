@@ -1,0 +1,53 @@
+.searchBar-wrap {
+  background: #fbf9ff;
+    padding: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  /* margin: 2.5rem auto 4rem auto; */
+  margin-bottom: 30px;
+}
+  
+  /* .searchBar-wrap form {
+    display: flex;
+    align-items: center;
+  } */
+  
+  .searchBar-wrap input {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-color: #f0e9ff;
+    font-size: 13px;
+    color: #999999;
+    padding-left: 20px;
+    border-radius: 0;
+    border-right: 0;
+    width: 100%;
+  }
+  
+  .searchBar-wrap span {
+    padding-right: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .searchBar-wrap button {
+    background: #fff;
+    color: #ED078B !important;
+    display: inline-block;
+    padding: 18px 44px;
+    font-family: "Fredoka One",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    border: 1px solid #ED078B;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #ED078B;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+  
+  

@@ -1,0 +1,733 @@
+/* first section css start */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka:wght@700&family=Roboto:ital,wght@1,100&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=DM+Sans:wght@400;700&family=Fredoka:wght@700&family=Roboto:ital,wght@1,100&display=swap');
+
+
+  .mobileslider1 {
+    display: none;
+
+}
+section.first_sec {
+    background-image: url("../assest/h1_hero.png");
+    padding: 150px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 130px;
+
+}
+
+.hero__caption {
+    overflow: hidden;
+    background: #fff;
+    padding: 100px 100px 70px 100px;
+    border-radius: 90px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka', sans-serif;
+    color: #423F8D;
+    margin-top: 0px;
+}
+
+ .hero__caption h1 {
+    font-size: 80px;
+    line-height: 1.1;
+    margin-bottom: 22px;
+    font-weight: 900;
+}
+
+.hero__caption h2 {
+    font-family: "Fredoka One",sans-serif;
+    color: #FBCE0F;
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.first_sec .btn {
+    background: #ED078B;
+    font-family: "Concert One",sans-serif;
+    text-transform: capitalize;
+    padding: 25px 38px !important;
+    color: #fff;
+    cursor: pointer;
+    display: inline-blockc !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    border-radius: 30px;
+   
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin: 0;
+    display: inline-block !important;
+}
+
+.first_sec a.btn.hero-btn:hover {
+    color: #fff;
+}
+
+/* first section css end */
+
+
+/* Second  section css start */
+
+.second_sec h2 {
+    font-size: 40px;
+    display: block;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-family: "Fredoka One",sans-serif;
+}
+.second_headicon img {
+    height: 85%;
+}
+
+.text_our {
+    color: #423F8D;
+    font-size: 18px;
+    padding: 20px 150px;
+}
+
+section.second_sec {
+    padding: 100px 0;
+}
+
+p.head_int{
+    font-family: 'Concert One',sans-serif;
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+span.text_wrd {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+.second_headicon {
+    align-items: center;
+    display: flex;
+}
+
+.inter_div{
+    padding: 20px 0;
+}
+.about-caption {
+    padding: 50px 0 0 0;
+}
+/* Second section css end */
+
+
+
+/* third section css start */
+
+section.third_sec {
+    background-image: url("../assest/section_bg1.png");
+    padding: 200px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    padding:0;
+    
+  }
+
+  /* third section css end */
+
+
+
+ /* Slider css */
+
+ .card-body h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-family: "Fredoka One",sans-serif;
+    color: #423F8D;
+    margin-top: 0px;
+    font-style: normal;
+    text-transform: normal
+}
+
+.card_ptxt {
+    font-family: "DM Sans",sans-serif;
+    color: #5E5E5E;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.color-font1 {
+    color: #423F8D;
+    display: block;
+    font-size: 20px;
+    font-family: "Concert One",sans-serif;
+    line-height: 1;
+    margin: 0;
+}
+.color-font2 {
+    color:#FBCE0F;
+    display: block;
+    font-size: 20px;
+    font-family: "Concert One",sans-serif;
+    line-height: 1;
+    margin: 0;
+}
+.color-font3 {
+    color: #ED078B;
+    display: block;
+    font-size: 20px;
+    font-family: "Concert One",sans-serif;
+    line-height: 1;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top_txt {
+    padding: 20px 15px 5px 15px;
+}
+.bot_txt {
+    padding: 10px 15px 20px 15px;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.p_agetxt {
+    font-size: 14px;
+}
+
+.card {
+    box-shadow: 0px 6px 6px 0px rgba(2,25,65,0.08);
+    border-radius: 30px;
+    background: #fff;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+    opacity: unset;
+    
+}
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: #000;
+    border: #fff;
+    border-radius: 50%;
+    opacity: 18;
+}
+
+#carouselExampleControls {
+    padding: 50px 0;
+}
+
+.border-btn {
+    border: 1px solid #ED078B;
+    color: #ED078B;
+    font-family: "Fredoka One",sans-serif;
+    background: none;
+    text-transform: capitalize;
+    padding: 17px 42px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    position: relative;
+    transition: color 0.4s linear;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    z-index: 1
+}
+
+.border-btn:hover {
+    color: #fff;
+}
+.border-btn i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #ED078B;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+.border-btn::before {
+    border: 1px solid transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 101%;
+    height: 101%;
+    background: #ED078B;
+    z-index: -1;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleY(0);
+    border-radius: 0
+}
+
+.border-btn:hover::before {
+    transform: scaleY(1);
+    border: 1px solid transparent;
+    color: #fff
+}
+
+
+
+/* Fourth section css start */
+
+.fourth_sec {
+    background-image: url("../assest/section_bg2.png");
+    padding: 200px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-tittle span {
+    font-family: "Fredoka One",sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #ED078B;
+    text-transform: capitalize;
+    display: inline-block;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+    line-height: 1.3
+}
+
+.section-tittle h2 {
+    font-size: 40px;
+    display: block;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-family: "Fredoka One",sans-serif;
+    color: #423F8D;
+}
+
+.section-tittle p {
+    color: #423F8D;
+    font-size: 18px;
+    font-family: "DM Sans",sans-serif;
+    color: #5E5E5E;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.fourth_sec .btn {
+    background: #ED078B;
+    font-family: "Concert One",sans-serif;
+    text-transform: capitalize;
+    padding: 25px 38px !important;
+    color: #fff;
+    cursor: pointer;
+    display: inline-blockc !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin: 0;
+    display: inline-block !important
+}
+
+.fourth_sec .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 101%;
+    height: 101%;
+    background: #da047d;
+    z-index: 1;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+    border-radius: 0px
+}
+
+.fourth_sec .btn:hover {
+    background-position: right
+}
+
+.fourth_sec .btn:hover::before {
+    transform: scaleX(1);
+    color: #fff !important;
+    z-index: -1
+}
+
+.fourth_sec .btn.focus,.btn:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+.date-wrapper {
+    background: #fff;
+    padding: 60px 60px 60px 60px;
+    border-radius: 60px;
+}
+
+h2.slide_head {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* Fourth section css end */
+
+
+/* Fifth section css start */
+
+
+section.fifth_sec {
+    padding: 100px 0;
+}
+
+
+/* Fifth section css end */
+
+
+
+/* six section css start */
+
+.six_sec {
+    background-image: url("../assest/section_bg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sixsec_slide{
+
+    padding: 100px 0 50px 0px;
+
+}
+
+.six_sec .carousel-icon i {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.six_sec .carousel-item i {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* .t-card {
+  padding: 1.8125rem 1.125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.25rem;
+  color: #fff;
+  height: auto;
+} */
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 1.5625rem solid transparent;
+  border-right: 1.5625rem solid transparent;
+  border-top: 1.25rem solid rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-nextt, .carousel-control-prevv {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.carousel-control-nextt {
+    right: 0;
+}
+.carousel-control-prevv {
+    left: 0;
+}
+
+.lh-lg {
+    line-height: 1.5;
+    font-size: 22px;
+    color: #423F8D;
+    font-family: "DM Sans",sans-serif;
+    text-align: center;
+    padding: 10px 150px;
+}
+
+.bot_testislide img {
+    height: 70px;
+    width: 70px;
+} 
+
+.head_testislide {
+    font-family: "Concert One",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px;
+
+}
+.txt_testislide {
+    font-family: "DM Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+img.img-fluid.testislide_img {
+    display: flex;
+    margin: auto;
+}
+
+.six_sec img.card_d-img-top {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+/* six section css end */
+
+
+
+  @media (max-width: 767px)
+    {
+
+    section.first_sec {
+            margin-top: 0px;
+        
+        }
+  .carousel-inner {
+    display: flex;
+    padding: 1em;
+  }
+
+  .carousel-item {
+    margin-right: 0;
+  }
+
+  .card {
+    margin-right: 0.5em;
+  }
+
+  h2.slide_head {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* first section mobile css start */
+
+.hero__caption {
+    padding: 20px 15px 20px 15px;
+    border-radius: 19px;
+}
+
+.hero__caption h1 {
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+.hero__caption h2 {
+    font-size: 25px;
+}
+
+
+/* first section mobile css end */
+
+
+
+/* second section mobile css start */
+
+.second_sec h2 {
+    font-size: 25px;
+}
+
+.text_our {
+    padding: 10px;
+}
+
+section.second_sec {
+    padding: 50px 0 50px 0;
+}
+.about-caption {
+    padding: 20px 0 0 0;
+}
+
+/* second section mobile css end */
+
+
+
+/* third section mobile css start */
+
+section.third_sec {
+    padding: 100px 0;
+
+}
+
+.desktopslider1 {
+    display: none;
+
+}
+
+.mobileslider1 {
+    display: unset;
+}
+
+.bot_txt {
+    padding: 10px 15px;
+}
+
+
+/* third section mobile css end */
+
+/* fourth section mobile css start */
+
+.section-tittle span {
+    font-size: 25px;
+}
+
+.section-tittle h2 {
+    font-size: 25px;
+}
+
+.date-wrapper {
+    padding: 50px 20px 50px 20px;
+    border-radius: 20px;
+}
+
+.fourth_sec {
+    padding: 50px 0;
+}
+
+/* fourth section mobile css end */
+
+/* six section mobile css start */
+.lh-lg {
+    line-height: 22px;
+    font-size: 16px;
+    padding: 10px 30px;
+}
+
+.carousel-control-nextt, .carousel-control-prevv {
+    width: 20%;
+    height: 420px;
+}
+
+.sixsec_slide {
+    padding: 20px 0 0 0;
+}
+
+.inter_div {
+    padding: 0;
+}
+
+.six_sec .carousel-inner {
+    padding: 0px;
+}
+
+.six_sec .inter_div {
+    padding: 0 0 30px 0;
+}
+/* six section mobile css end */
+
+
+}
+
+/* tablet css start */
+
+@media (max-width: 1023px)
+    {
+        section.first_sec {
+            margin-top: 0px;
+        
+        }
+        .card {
+            margin: 0 8px;
+        }
+        .color-font1 {
+            font-size: 16px;
+        }
+        .p_agetxt {
+            font-size: 9px;
+        }
+
+        .third_sec .container {
+            max-width: 100%;
+        }
+
+        .color-font1, .color-font2, .color-font3 {
+            font-size: 16px;
+            padding: 0 0 10px 0;
+        }
+
+        .card-body h3 {
+            font-size: 18px;
+        }
+
+        .card_ptxt {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 0;
+        }
+
+        section.third_sec {
+            padding: 100px 0;
+        }
+
+        .fourth_sec {
+            padding: 100px 0;
+        }
+    }
+
+
+/* tablet css start */
