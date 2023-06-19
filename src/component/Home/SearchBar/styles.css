@@ -5,6 +5,9 @@
   width: fit-content;
   /* margin: 2.5rem auto 4rem auto; */
   margin-bottom: 30px;
+  position: absolute;
+    right: 0;
+    margin-right: 120px;
 }
   
   /* .searchBar-wrap form {
@@ -48,6 +51,11 @@
     cursor: pointer;
     width: 100%;
     margin-top: 10px;
+}
+.searchBar-wrap button:hover {
+  background: #ED078B;
+  color: #fff !important;
+  border: 1px solid #ED078B;
 }
   
   

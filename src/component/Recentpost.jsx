@@ -9,7 +9,7 @@ function Recentpost() {
     <aside className="single_sidebar_widget popular_post_widget">
     <h3 className="widget_title" style={{color: "#2d2d2d"}}>Recent Post</h3>
     <div className="media post_item">
-    <img src="assets/img/post/post_1.png" alt="post"/>
+    <img src={require("../assest/post_1.png")} alt="post"/>
     <div className="media-body">
     <a href="blog_details.html">
     <h3 >From life was you fish...</h3>
@@ -18,7 +18,7 @@ function Recentpost() {
     </div>
     </div>
     <div className="media post_item">
-    <img src="assets/img/post/post_2.png" alt="post"/>
+    <img src={require("../assest/post_2.png")} alt="post"/>
     <div className="media-body">
     <a href="blog_details.html">
     <h3 >The Amazing Hubble</h3>
@@ -27,7 +27,7 @@ function Recentpost() {
     </div>
     </div>
     <div className="media post_item">
-    <img src="assets/img/post/post_3.png" alt="post"/>
+    <img src={require("../assest/post_1.png")} alt="post"/>
     <div className="media-body">
     <a href="blog_details.html">
     <h3 >Astronomy Or Astrology</h3>
@@ -36,7 +36,7 @@ function Recentpost() {
     </div>
     </div>
     <div className="media post_item">
-    <img src="assets/img/post/post_4.png" alt="post"/>
+    <img src={require("../assest/post_1.png")} alt="post"/>
     <div className="media-body">
     <a href="blog_details.html">
     <h3 >Asteroids telescope</h3>

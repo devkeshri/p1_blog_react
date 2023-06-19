@@ -1,0 +1,43 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=DM+Sans:wght@400;700&family=Fredoka:wght@700&family=Recursive:wght@600;700;900&family=Roboto:ital,wght@1,100&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=DM+Sans:wght@400;700&family=Fredoka:wght@600;700&family=Recursive:wght@600;700;900&family=Roboto:ital,wght@1,100&display=swap');
+
+.bloginner h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2d2d2d;
+    /* font-family: "Fredoka One"; */
+    font-weight: 800;
+    padding-top: 20px;
+    text-align: left;
+}
+.bloginner .blog-desc {
+    padding: 0;
+    margin-top: 0;
+}
+.bloginner .blog-subCategory {
+    justify-content: flex-start;
+}
+.bloginner h4  {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 22px;
+    /* font-family: "Fredoka One",sans-serif; */
+    font-weight: 700;
+}
+.boxed-btn:hover {
+    background: #ED078B;
+    color: #fff !important;
+    border: 1px solid #ED078B;
+    /* font-family: "Fredoka One",sans-serif; */
+}
+.boxed-btn {
+    /* font-family: "Fredoka One",sans-serif; */
+    font-weight: 700;
+    margin-top: 20px;
+}
+.comment-form {
+    border-top: 1px solid #eee;
+    padding: 20px 0;
+}

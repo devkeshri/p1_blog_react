@@ -10,3 +10,10 @@
     align-self: center;
     padding-left: 20px;
 }
+.media.post_item {
+    display: flex;
+    align-items: flex-start;
+}
+.blog_right_sidebar .popular_post_widget .post_item+.post_item {
+    margin-top: 20px;
+}
