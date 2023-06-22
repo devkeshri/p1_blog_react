@@ -3,7 +3,6 @@ import "../styles/Contact.css"
 import { AiOutlineHome } from 'react-icons/ai';
 import { IoMdPhonePortrait } from 'react-icons/io';
 import { HiOutlineMailOpen } from 'react-icons/hi';
-import Sidebar from './Sidebar';
 
 function Contact() {
   return (
@@ -81,9 +80,7 @@ function Contact() {
   </div>
   </div>
   </section>
-  <section>
-    <Sidebar/>
-  </section>
+ 
       </>
   )
 }
