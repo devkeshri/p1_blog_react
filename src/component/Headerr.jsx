@@ -77,14 +77,14 @@ const Headerr = () => {
                 <NavLink className="nav-link" to="/about">About</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link desk" to="/home">Blog</Link>
+                <Link className="nav-link desk" to="/blogshow">Blog</Link>
                 <Link className="nav-link mob" to="" data-bs-toggle="dropdown">Blog</Link>
                 <div className="dropdown-menu bg-light rounded-0 m-0 text-dark">
 
 
-                  <Link to="/blogshow" className="dropdown-item">Blog</Link>
-                  <Link to="/tea" className="dropdown-item">Blog</Link>
-                  <Link to="/HerbalTeawithmilk" className="dropdown-item">Blog</Link>
+                  <Link to="#" className="dropdown-item">Blog</Link>
+                  <Link to="#" className="dropdown-item">Blog</Link>
+                  <Link to="#" className="dropdown-item">Blog</Link>
                 </div>
               </li>
               <li className="nav-item">

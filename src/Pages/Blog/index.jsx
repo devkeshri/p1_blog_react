@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { blogList } from '../../config/data';
+import axios from 'axios';
+// import { blogList } from '../../component/Home/BlogList';
 import Chip from '../../component/common/Chip';
 import EmptyList from '../../component/common/EmptyList';
 import './styles.css';
@@ -11,7 +12,7 @@ import Instagram from '../../component/Instagram';
 import Newslatter from '../../component/Newslatter';
 import Recentpost from '../../component/Recentpost'
 import SearchBar from '../../component/Home/SearchBar/index';
-// import BlogList from '../../component/Home/BlogList';
+// import BlogList from '../../component/Home/BlogList/index';
 import { GrFacebookOption } from 'react-icons/gr';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiOutlineDribbble } from 'react-icons/ai';
@@ -20,12 +21,11 @@ import { BsBehance } from 'react-icons/bs';
 
 const Blog = () => {
 
-
-
-
-  // search code
-  const [blogs, setBlogs] = useState(blogList);
+ // search code
+  const [blogs, setBlogs] = useState([]);
   const [searchKey, setSearchKey] = useState('');
+  const [users, setUsers] = useState([]);
+
 
   // Search submit
   const handleSearchBar = (e) => {
@@ -33,31 +33,67 @@ const Blog = () => {
     handleSearchResults();
   };
 
-  // Search for blog by category
+  // // Search for blog by category
   const handleSearchResults = () => {
-    const allBlogs = blogList;
-    const filteredBlogs = allBlogs.filter((blog) =>
+    // const allBlogs = blogList;
+    const searchBlogdata = blogs.filter((blog) =>
       blog.category.toLowerCase().includes(searchKey.toLowerCase().trim())
     );
-    setBlogs(filteredBlogs);
+    setBlogs(searchBlogdata);
   };
 
   // Clear search and show all blogs
   const handleClearSearch = () => {
-    setBlogs(blogList);
     setSearchKey('');
+    // Reset to original blogs data
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/blog/getblog');
+        setBlogs(response.data.blogs);
+        setUsers(response.data.blogs); // Set the users state to show all blogs
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
   };
+
+  // // Clear search and show all blogs
+  // const handleClearSearch = () => {
+  //   setBlogs(blogList);
+  //   setSearchKey('');
+  // };
 
   // search code end
   const { id } = useParams();
   const [blog, setBlog] = useState(null);
 
+  
+
   useEffect(() => {
-    let blog = blogList.find((blog) => blog.id === parseInt(id));
-    if (blog) {
-      setBlog(blog);
-    }
-  }, []);
+    // Fetch the data and set it in the blogs state
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`http://localhost:5000/blog/getblog/${id}`);
+        // console.log(response.data.blogs)
+        // if (response.blogs && response.blogs.data && response.blogs.data.length > 0) {
+          const firstDataObject = response.data.blog;
+          setBlog(firstDataObject);
+          console.log("Data", response.data.blog);
+        // }else{
+        //   console.log('not working')
+        // }
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, [id]);
+
+
+
 
 
   return (
@@ -72,7 +108,7 @@ const Blog = () => {
               <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-12">
                   <div className="class_head">
-                    <h1 className="">Blog</h1>
+                    <h1 className="">Blog deatils</h1>
                   </div>
                 </div>
               </div>
@@ -83,18 +119,20 @@ const Blog = () => {
             <div className="container">
               <div className="row">
                 <div className="col-lg-8">
+
+                
                   <div className='blog-wrap'>
 
                     <img src={require('../../assest/single_blog_1.png')} alt='cover' />
                     <header>
-                      {/* <p className='blog-date'>Published {blog.createdAt}</p> */}
+                      {/* <p className='blog-date'>Published {createdAt}</p> */}
                       <h1>{blog.title}</h1>
                       <div className='blog-subCategory'>
-                        {blog.subCategory.map((category, i) => (
+                        {/* {blog.subCategory.map((category, i) => (
                           <div key={i}>
                             <Chip label={category} />
                           </div>
-                        ))}
+                        ))} */}
                       </div>
                     </header>
                     <p className='blog-desc'>{blog.description}</p>
@@ -243,7 +281,8 @@ const Blog = () => {
                     formSubmit={handleSearchBar}
                     handleSearchKey={(e) => setSearchKey(e.target.value)}
                   />
-
+                   
+                   {/* {!users.length ? <EmptyList /> : <BlogList blogs={users} />} */}
 
                   {/* search code end */}
 

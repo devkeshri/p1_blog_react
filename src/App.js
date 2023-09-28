@@ -13,6 +13,8 @@ import Registration from './component/Registration';
 import Blog from './Pages/Blog/index';
 import Home from './Pages/Home/index';
 import Blogshow from './component/Blogshow';
+
+
 // import Bloginner from './component/Bloginner';
 
 
@@ -47,6 +49,7 @@ function App() {
 
 
   return (
+    
     <>
    {/* <Router> */}
  
@@ -78,6 +81,7 @@ function App() {
 
    
   </>
+ 
  
   )
 }

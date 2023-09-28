@@ -83,3 +83,15 @@ section.bloginner {
   margin-left: 20px;
 }
   
+.pagination-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+p.num_btn {
+  padding: 0 10px 0 10px;
+  margin: 0;
+}

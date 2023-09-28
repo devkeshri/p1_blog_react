@@ -7,6 +7,8 @@ import { FaUser } from 'react-icons/fa';
 
 
 const BlogItem = ({
+ 
+
   blog: {
     description,
     title,
@@ -15,10 +17,15 @@ const BlogItem = ({
     authorAvatar,
     cover,
     category,
-    id,
+    _id,
   },
 
+
+
 }) => {
+
+  const formattedDate = createdAt.slice(3, 10); // Assuming the date string is in the format 'yyyy-mm-dd'
+
  
 
   return (
@@ -29,8 +36,8 @@ const BlogItem = ({
       <img className='blogItem-cover' src={require('../../../../../src/assest/single_blog_1.png')} alt='cover' />
       
       <div className="content_box">
-      <p className='blog_item_date'>{createdAt}</p>
-      <Link to={`/blog/${id}`}><h3>{title} dev</h3></Link>
+      <p className='blog_item_date'>{formattedDate}</p>
+      <Link to={`/blog/${_id}`}><h3>{title} dev</h3></Link>
       <p className='blogItem-desc'>{description}</p>
       <div className="d-flex cat_icon">
       <FaUser/>
@@ -46,7 +53,7 @@ const BlogItem = ({
           </div>
           <Bloginner/>
         </div>
-        {/* <Link className='blogItem-link' to={`/blog/${id}`}>
+        {/* <Link className='blogItem-link' to={`/blog/${_id}`}>
           ➝
         </Link> */}
       </footer>

@@ -1,54 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import "../styles/Sidebar.css"
 
-function sidebar() {
+function Sidebar() {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/blog/getblog'); // Replace with your API endpoint
+        setCategories(response.data.blogs);
+        console.log("cat", response.data.blogs )
+      } catch (error) {
+        console.error('Error fetching categories:', error);
+      }
+    };
+
+    fetchCategories();
+  }, []);
+
   return (
     <div className="cate_padding">
-    <div className="blog_right_sidebar">
-    <aside className="single_sidebar_widget post_category_widget">
-<h4 className="widget_title" style={{color: "#2d2d2d;"}}>Category</h4>
-<ul className="list cat-list">
-<li>
-<a href="#" className="d-flex">
-<p>Resaurant food</p>
-<p>(37)</p>
-</a>
-</li>
-<li>
-<a href="#" className="d-flex">
-<p>Travel news</p>
-<p>(10)</p>
-</a>
-</li>
-<li>
-<a href="#" className="d-flex">
-<p>Modern technology</p>
-<p>(03)</p>
-</a>
-</li>
-<li>
-<a href="#" className="d-flex">
-<p>Product</p>
-<p>(11)</p>
-</a>
-</li>
-<li>
-<a href="#" className="d-flex">
-<p>Inspiration</p>
-<p>21</p>
-</a>
-</li>
-<li>
-<a href="#" className="d-flex">
-<p>Health Care (21)</p>
-<p>09</p>
-</a>
-</li>
-</ul>
-</aside>
-</div>
-</div>
-  )
+      <div className="blog_right_sidebar">
+        <aside className="single_sidebar_widget post_category_widget">
+          <h4 className="widget_title" style={{ color: "#2d2d2d;" }}>Category</h4>
+          <ul className="list cat-list">
+          {categories.map(cat => (
+              
+                <a href="#" className="d-flex">
+                  <p>{cat.category}</p>
+                  
+                </a>
+              
+            ))}
+          </ul>
+        </aside>
+      </div>
+    </div>
+  );
 }
 
-export default sidebar
+export default Sidebar;
